@@ -1,23 +1,25 @@
+import java.io.FileWriter;
+
 public class Main {
 
     public static void main(String[] args) throws Exception {
-        Polinom3 x = new Polinom3("src\\Test");
-        /*x.insert(5,5,5,5);
-        System.out.println(x.toString());
-        x.insert(5,0,0,0);
-        System.out.println(x.toString());
-        x.insert(5234,0,0,0);
-        System.out.println(x.toString());
-        x.delete(2,3,4);
-        System.out.println(x.toString());
-        x.derivative(1);
-        System.out.println(x.toString());
-        x.add(new Polinom3("src\\Test2"));*/
-        System.out.println(x.toString());
-        /*x.delete(2,3,4);
-        System.out.println(x.toString());
-        x.add(new Polinom3("src\\Test"));
-        System.out.println(x.toString());*/
+        FileWriter fileWriter = new FileWriter("src\\Test");
+        StringBuilder res = new StringBuilder();
+        int[] data = {1,2,4,8,16,32,64,100,128,200,256,378,512,1024,1568,2048,3053,4096,9000,18000,36000,72000,100000};
+        for (int j = 0; j < data.length; j++) {
+            for (int i = 1; i <= data[j]; i++) {
+                fileWriter.write(i + " " + i + " " + i + " " + i + "\n");
+            }
+            fileWriter.flush();
+            long startTime = System.currentTimeMillis();
+            Polinom3 x = new Polinom3("src\\Test");
+            x.toString();
+            long finishTime = System.currentTimeMillis();
+            res.append(finishTime - startTime + ",");
+
+        }
+        fileWriter.close();
+        System.out.println(res.toString());
     }
 
 }
