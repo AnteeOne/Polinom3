@@ -17,7 +17,7 @@ Also you can see [Polinom3 API](https://anteeone.github.io/Semestral-Work/javado
 
 
 ## Plots:
-On this plots , which are made with using **"matplotlib" Python** module.
+On this plots , which are made with using **"matplotlib" Python** module you can see relationship between difficulty of methods and count of values , which had been used in every method.
 Some plots not very accurate ,
 but they can show difficulty of methods
 
