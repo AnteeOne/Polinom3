@@ -3,7 +3,7 @@
 First Semestral work at first course second semester KFU HS ITIS - implementation of Polinom of three variables.
 **Warning!!!** Please never use this code for your safety :)
 ## **Javadoc**
-Also you can see [Polinom3 API](https://anteeone.github.io/Semestral-Work/javadoc/index.html)
+Also you can see [Polinom3 API](https://anteeone.github.io/Polinom3/javadoc/index.html)
 ## **Difficulty**
 ### **O(N):**
 - **delete**
